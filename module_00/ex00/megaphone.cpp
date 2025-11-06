@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/06 12:57:43 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/06 12:59:08 by ravazque         ###   ########.fr       */
+/*   Created: 2025/11/06 13:30:41 by ravazque          #+#    #+#             */
+/*   Updated: 2025/11/06 13:31:04 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,25 +16,32 @@
 
 int	main(int argc, char **argv)
 {
-	if (argc != 1)
+	int	i = 1;
+	int	j;
+	
+	if (argc == 1)
 	{
-		for(int i = 1; argv[i]; i++)
-		{
-			for(int j = 0; argv[i][j]; j++)
-			{
-				if (strncmp(&argv[i][j], "ñ", 2) == 0)
-				{
-					std::cout << "Ñ";
-					j++;
-				}
-				else
-					std::cout << (char)toupper(argv[i][j]);
-			}
-			std::cout << " ";
-		}
+		std::cout << "Please enter arguments for the program to work!";
 		std::cout << std::endl;
+		return (1);
 	}
-	else
-		std::cout << "Por favor introduce un argumento válido\n";
-	return 0;
+	while(argv[i])
+	{
+		j = 0;
+		while(argv[i][j])
+		{
+			if (strncmp(&argv[i][j], "ñ", 2) == 0)
+			{
+				std::cout << "Ñ";
+				j++;
+			}
+			else
+				std::cout << (char)toupper(argv[i][j]);
+			j++;
+		}
+		std::cout << " ";
+		i++;
+	}
+	std::cout << std::endl;
+	return (0);
 }
