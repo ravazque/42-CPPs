@@ -1,6 +1,4 @@
 .claude
 .vscode
-module01
-module02
-module03
-module04
+module00/ex00/megaphone
+module00/ex00/megaphone.o
