@@ -1,4 +1,2 @@
 
-# c++
-
-Seguimos aprendiendo....
+# segmentation fault (core dump)

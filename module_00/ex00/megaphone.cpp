@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 13:30:41 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/06 13:31:04 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/08 18:33:32 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ int	main(int argc, char **argv)
 	
 	if (argc == 1)
 	{
-		std::cout << "Please enter arguments for the program to work!";
-		std::cout << std::endl;
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
 		return (1);
 	}
 	while(argv[i])
