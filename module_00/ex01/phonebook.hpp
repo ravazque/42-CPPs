@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 18:14:44 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/09 01:44:05 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/10 18:43:25 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,11 @@ class	contact
 		contact();
 		~contact();
 
-		// GETTERS (obtener valores) - const = no modifica el objeto
-
 		void	setName(string name);
 		void	setLast(string last);
 		void	setNick(string nick);
 		void	setPhone(string phone);
 		void	setSecret(string secret);
-
-		// GETTERS (obtener valores) - const = no modifica el objeto
 
 		string		getName() const;
 		string		getLast() const;
@@ -63,9 +59,9 @@ class	phoneBook
 
 	private:
 		const	int	max_contacts;
-		int			current_nb;
-		int			nb_contacts;
-		contact		array[8];
+		int			number;
+		int			contacts;
+		contact		book[8];
 
 		bool	get_input(string &input, const string &prompt);
 };

@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 18:14:13 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/09 02:22:53 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/09 02:35:33 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	main(int argc, char **argv)
 		if (!input.compare("ADD"))
 			pb.add_contact();
 		else if (!input.compare("SEARCH"))
-			printf("Función SEARCH ( Ignore ther error! )\n");
+			pb.search_contact();
 		else if (!input.compare("EXIT"))
 		{
 			std::cout << "Bye bye!" << std::endl;
