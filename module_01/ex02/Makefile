@@ -1,11 +1,11 @@
 
-NAME = phonebook
+NAME = 
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
-CXX = g++
+CXX = c++
 RM = rm -f
 
-SRCS = phonebook.cpp phonebook_contact.cpp phonebook_options.cpp
+SRCS =  
 OBJ_DIR = objects
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 

@@ -1,11 +1,11 @@
 
-NAME = phonebook
+NAME = zombie
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 CXX = g++
 RM = rm -f
 
-SRCS = phonebook.cpp phonebook_contact.cpp phonebook_options.cpp
+SRCS =  Zombie.cpp randomChump.cpp newZombie.cpp main.cpp
 OBJ_DIR = objects
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
