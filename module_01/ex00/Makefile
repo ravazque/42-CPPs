@@ -2,7 +2,7 @@
 NAME = zombie
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
-CXX = g++
+CXX = c++
 RM = rm -f
 
 SRCS =  Zombie.cpp randomChump.cpp newZombie.cpp main.cpp

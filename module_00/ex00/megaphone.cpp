@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 13:30:41 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/08 18:33:32 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/17 21:18:42 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ int	main(int argc, char **argv)
 				std::cout << (char)toupper(argv[i][j]);
 			j++;
 		}
-		std::cout << " ";
 		i++;
 	}
 	std::cout << std::endl;

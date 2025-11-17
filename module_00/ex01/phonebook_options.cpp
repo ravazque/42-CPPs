@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 01:54:09 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/10 19:17:06 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/17 21:17:00 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	phoneBook::add_contact()
 	string	phone;
 	string	secret;
 
-	if (this->number == 8)
+	if (this->number == max_contacts)
 		this->number = 0;
 	system("clear");
 	if (!get_input(name, "Type the first name: "))
@@ -71,19 +71,19 @@ void	phoneBook::add_contact()
 
 	this->number++;
 
-	if (contacts < 8)
+	if (contacts < max_contacts)
 		contacts++;
 }
 
 void	phoneBook::search_contact()
 {
-	int	i = 0;
 	string	name;
 	string	last;
 	string	nick;
 	string	phone;
 	string	secret;
 	string	ret;
+	int	i = 0;
 	int	index;
 
 	system("clear");
@@ -159,7 +159,7 @@ void	phoneBook::search_contact()
 
 	index = atoi(ret.c_str());
 
-	if (index < 1 || index > 8)
+	if (index < 1 || index > max_contacts)
 	{
 		std::cout << "Index must be between 1 and 8! Returning to the main menu." << std::endl; sleep(1); system("clear");
 		return;
