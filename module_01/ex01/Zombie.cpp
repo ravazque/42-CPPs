@@ -1,38 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/16 02:15:31 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 02:45:42 by ravazque         ###   ########.fr       */
+/*   Created: 2025/11/16 02:16:04 by ravazque          #+#    #+#             */
+/*   Updated: 2025/11/18 02:40:34 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "Zombie.hpp"
+#include "Zombie.hpp"
 
-int main(int argc, char *argv[])
+void Zombie::announce(void)
 {
-	int N = 5;
-	(void)argv;
-
-	if (argc != 1)
-	{
-		std::cout << "Please do not add arguments to the executable." << std::endl;
-		return (1);
-	}
-
-	Zombie *zombies = Zombie::zombieHorde(N, "Manolo");
-
-	if (zombies == NULL)
-		return (1);
-
-	while (N != 0)
-	{
-		zombies[N - 1].announce();
-		N -= 1;
-	}
-	delete[] zombies;
-	return (0);
+	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

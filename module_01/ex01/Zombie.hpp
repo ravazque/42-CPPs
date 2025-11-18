@@ -1,38 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/16 02:15:31 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 02:45:42 by ravazque         ###   ########.fr       */
+/*   Created: 2025/11/16 02:14:16 by ravazque          #+#    #+#             */
+/*   Updated: 2025/11/18 02:51:37 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "Zombie.hpp"
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
 
-int main(int argc, char *argv[])
+#include <iostream>
+
+class Zombie
 {
-	int N = 5;
-	(void)argv;
+	private:
 
-	if (argc != 1)
-	{
-		std::cout << "Please do not add arguments to the executable." << std::endl;
-		return (1);
-	}
+		std::string name;
 
-	Zombie *zombies = Zombie::zombieHorde(N, "Manolo");
+	public:
 
-	if (zombies == NULL)
-		return (1);
+		void destroy( Zombie *z )
+		{
+			std::cout << z->name << " destroyed" << std::endl;
+			delete z;
+		}
+		
+		void	setName(std::string zombieName)
+		{
+			name = zombieName;
+		}
+		
+		void announce( void );
+		static Zombie* zombieHorde( int N, std::string name );
+};
 
-	while (N != 0)
-	{
-		zombies[N - 1].announce();
-		N -= 1;
-	}
-	delete[] zombies;
-	return (0);
-}
+#endif

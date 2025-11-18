@@ -1,38 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/16 02:15:31 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 02:45:42 by ravazque         ###   ########.fr       */
+/*   Created: 2025/11/18 02:16:19 by ravazque          #+#    #+#             */
+/*   Updated: 2025/11/18 02:35:41 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "Zombie.hpp"
+#include "Zombie.hpp"
 
-int main(int argc, char *argv[])
+Zombie* Zombie::zombieHorde( int N, std::string name )
 {
-	int N = 5;
-	(void)argv;
-
-	if (argc != 1)
+	if (N <= 0)
 	{
-		std::cout << "Please do not add arguments to the executable." << std::endl;
-		return (1);
+		std::cout << "Please enter a positive number greater than 0." << std::endl;
+		return (NULL);
 	}
 
-	Zombie *zombies = Zombie::zombieHorde(N, "Manolo");
-
-	if (zombies == NULL)
-		return (1);
-
-	while (N != 0)
+	Zombie *zombies = new Zombie[N];
+	int i = 0;
+	while (i < N)
 	{
-		zombies[N - 1].announce();
-		N -= 1;
+        zombies[i].setName(name);
+		i++;
 	}
-	delete[] zombies;
-	return (0);
+    return (zombies);
 }
