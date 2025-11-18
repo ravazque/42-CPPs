@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 21:44:19 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 03:00:58 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/18 03:18:48 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 1)
 	{
-		std::cout << "Please do not add arguments to the executable." << std::endl;
+		std::cerr << "Please do not add arguments to the executable." << std::endl;
 		return (1);
 	}
 	
