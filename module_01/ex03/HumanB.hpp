@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/18 13:45:56 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 18:28:16 by ravazque         ###   ########.fr       */
+/*   Created: 2025/11/18 18:33:31 by ravazque          #+#    #+#             */
+/*   Updated: 2025/11/18 18:36:17 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#include <string>
+#include <iostream>
+#include "HumanA.hpp"
 
-int main(int argc, char *argv[]) 
+class HumanB
 {
-	(void)argv;
-	
-	if (argc != 2)
-	{
-		std::cerr << "[ Probably complaining about insignificant problems ]" << std::endl;
-		return (1);
-	}
-	
-	Harl	harl;
+    private:
+        std::string name;
+        Weapon* weapon;
 
-	harl.complain(argv[1]);
-	return(0);
-}
+    public:
+        HumanB(const std::string& name, Weapon* weapon) : name(name), weapon(weapon) {}
+        ~HumanB(void);
+        void setWeapon(Weapon& newWeapon);
+        void attack();
+};

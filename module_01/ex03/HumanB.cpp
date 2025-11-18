@@ -1,29 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/18 13:45:56 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 18:28:16 by ravazque         ###   ########.fr       */
+/*   Created: 2025/11/18 18:33:34 by ravazque          #+#    #+#             */
+/*   Updated: 2025/11/18 18:37:15 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#include "HumanB.hpp"
 
-int main(int argc, char *argv[]) 
+void HumanB::setWeapon(Weapon& newWeapon)
 {
-	(void)argv;
-	
-	if (argc != 2)
-	{
-		std::cerr << "[ Probably complaining about insignificant problems ]" << std::endl;
-		return (1);
-	}
-	
-	Harl	harl;
+	weapon = &newWeapon;
+}
 
-	harl.complain(argv[1]);
-	return(0);
+void HumanB::attack()
+{
+	if (weapon)
+		std::cout << name << " attacks with their " << weapon->getType() << std::endl;
+	else
+		std::cout << name << " have no weapon" << std::endl;
+}
+
+HumanB::~HumanB(void)
+{
+	std::cout << "HumanA " << name << " destroyed" << std::endl;
 }

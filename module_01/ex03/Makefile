@@ -1,11 +1,11 @@
 
-NAME = 
+NAME = human
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 CXX = c++
 RM = rm -f
 
-SRCS = 
+SRCS = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
 OBJ_DIR = objects
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 

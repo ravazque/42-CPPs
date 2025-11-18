@@ -1,25 +1,22 @@
-// /* ************************************************************************** */
-// /*                                                                            */
-// /*                                                        :::      ::::::::   */
-// /*   Account.cpp                                        :+:      :+:    :+:   */
-// /*                                                    +:+ +:+         +:+     */
-// /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
-// /*                                                +#+#+#+#+#+   +#+           */
-// /*   Created: 2025/11/18 02:12:52 by ravazque          #+#    #+#             */
-// /*   Updated: 2025/11/18 02:14:02 by ravazque         ###   ########.fr       */
-// /*                                                                            */
-// /* ************************************************************************** */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Account.cpp                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/18 02:12:52 by ravazque          #+#    #+#             */
+/*   Updated: 2025/11/18 18:29:26 by ravazque         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-// #include "Account.hpp"
-// #include <iomanip>
-// #include <iostream>
+#include "Account.hpp"
+#include <iomanip>
+#include <iostream>
 
 // int	Account::_nbAccounts = 0;
-
 // int	Account::_totalNbWithdrawals = 0;
-
 // int	Account::_totalNbDeposits = 0;
-
 // int	Account::_totalAmount = 0;
 
 // Account::Account(int initial_deposit)

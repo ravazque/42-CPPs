@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/18 13:45:56 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 18:28:16 by ravazque         ###   ########.fr       */
+/*   Created: 2025/11/18 18:33:38 by ravazque          #+#    #+#             */
+/*   Updated: 2025/11/18 18:37:28 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#include "HumanA.hpp"
 
-int main(int argc, char *argv[]) 
+void HumanA::attack()
 {
-	(void)argv;
-	
-	if (argc != 2)
-	{
-		std::cerr << "[ Probably complaining about insignificant problems ]" << std::endl;
-		return (1);
-	}
-	
-	Harl	harl;
+	std::cout << name << " attacks with their " << weapon.getType() << std::endl;
+}
 
-	harl.complain(argv[1]);
-	return(0);
+HumanA::~HumanA(void)
+{
+	std::cout << "HumanA " << name << " destroyed" << std::endl;
 }

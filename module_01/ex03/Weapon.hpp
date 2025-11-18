@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/18 13:45:56 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 18:28:16 by ravazque         ###   ########.fr       */
+/*   Created: 2025/11/18 18:33:27 by ravazque          #+#    #+#             */
+/*   Updated: 2025/11/18 18:35:16 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#include <string>
 
-int main(int argc, char *argv[]) 
+class Weapon
 {
-	(void)argv;
-	
-	if (argc != 2)
-	{
-		std::cerr << "[ Probably complaining about insignificant problems ]" << std::endl;
-		return (1);
-	}
-	
-	Harl	harl;
+    private:
+        std::string type;
 
-	harl.complain(argv[1]);
-	return(0);
-}
+    public:
+        Weapon(const std::string& name) : type(name) {}
+        const std::string getType();
+        void setType( std::string s);
+};
