@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 02:14:16 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 02:51:37 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/18 21:05:33 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,12 @@ class Zombie
 
 	public:
 
-		void destroy( Zombie *z )
-		{
-			std::cout << z->name << " destroyed" << std::endl;
-			delete z;
-		}
+		Zombie();
+		Zombie(std::string name);
 		
-		void	setName(std::string zombieName)
-		{
-			name = zombieName;
-		}
-		
+		~Zombie();
+
+		void setName(std::string zombieName);
 		void announce( void );
 		static Zombie* zombieHorde( int N, std::string name );
 };

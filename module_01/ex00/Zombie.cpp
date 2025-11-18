@@ -6,11 +6,24 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 02:16:04 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/16 02:37:29 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/18 21:10:11 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+
+Zombie::Zombie()
+{
+}
+
+Zombie::Zombie(std::string name): name(name)
+{
+}
+
+Zombie::~Zombie()
+{
+	std::cout << name << " destroyed" << std::endl;
+}
 
 void Zombie::announce(void)
 {
