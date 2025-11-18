@@ -1,11 +1,11 @@
 
-NAME = zombie
+NAME = fixed
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 CXX = c++
 RM = rm -f
 
-SRCS = Zombie.cpp randomChump.cpp newZombie.cpp main.cpp
+SRCS = Fixed.cpp main.cpp
 OBJ_DIR = objects
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
