@@ -1,2 +1,2 @@
 
-# segmentation fault (core dump)
+# segmentation fault (core dumped)
