@@ -6,12 +6,12 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 13:45:58 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/19 13:17:30 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 20:25:10 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef __HARL__
-# define __HARL__
+#ifndef __HARL_HPP__
+# define __HARL_HPP__
 
 # include <string>
 # include <iostream>

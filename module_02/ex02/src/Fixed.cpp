@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 01:27:17 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/19 13:33:56 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 22:51:13 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,7 @@ Fixed	&Fixed::operator=(const Fixed &src)
 {
 	if (this != &src)
 		this->_fp_value = src.getRawBits();
-
-	return *this;
+	return (*this);
 }
 
 bool	Fixed::operator>(Fixed fixed) const

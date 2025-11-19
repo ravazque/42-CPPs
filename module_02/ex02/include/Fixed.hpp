@@ -6,12 +6,12 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 01:27:19 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/19 13:38:36 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 20:24:54 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef __FIXED__
-# define __FIXED__
+#ifndef __FIXED_HPP__
+# define __FIXED_HPP__
 
 # include <string>
 # include <iostream>

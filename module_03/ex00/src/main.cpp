@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Harl.hpp                                           :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/18 13:45:58 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/19 20:25:05 by ravazque         ###   ########.fr       */
+/*   Created: 2025/11/19 20:27:35 by ravazque          #+#    #+#             */
+/*   Updated: 2025/11/19 23:03:46 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef __HARL_HPP__
-# define __HARL_HPP__
+#include "../include/ClapTrap.hpp"
 
-# include <string>
-# include <iostream>
-
-typedef std::string string;
-
-class Harl
+int	main(int argc, char **argv)
 {
-	private:
+    ClapTrap player_one("Player 1");
+    ClapTrap player_two("Player 2");
+    (void)argv;
 
-		void	debug( void );
-		void	info( void );
-		void	warning( void );
-		void	error( void );
-
-	public:
-
-		void	complain( string level );
-	
-};
-
-#endif
+	if (argc != 1)
+	{
+		std::cerr << "Please do not add arguments to the executable." << std::endl;
+		return (1);
+	}
+    return(0);
+}
