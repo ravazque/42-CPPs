@@ -6,11 +6,11 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 01:27:17 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/19 01:40:51 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:34:00 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "Fixed.hpp"
+#include "../include/Fixed.hpp"
 
 const int Fixed::_fract_bits = 8;
 

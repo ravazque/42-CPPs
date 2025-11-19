@@ -6,11 +6,11 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 02:16:04 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 21:10:11 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:28:17 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../include/Zombie.hpp"
 
 Zombie::Zombie()
 {

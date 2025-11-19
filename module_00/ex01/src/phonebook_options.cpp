@@ -6,11 +6,11 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 01:54:09 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/17 21:17:00 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:27:11 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "phonebook.hpp"
+#include "../include/phonebook.hpp"
 
 phoneBook::phoneBook() : max_contacts(8), number(0), contacts(0)
 {

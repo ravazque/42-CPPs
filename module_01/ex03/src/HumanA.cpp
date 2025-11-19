@@ -6,11 +6,11 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 18:33:38 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 18:37:28 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:28:43 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanA.hpp"
+#include "../include/HumanA.hpp"
 
 void HumanA::attack()
 {

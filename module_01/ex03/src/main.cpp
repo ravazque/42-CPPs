@@ -6,11 +6,11 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 18:33:44 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 18:36:53 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:28:48 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanB.hpp"
+#include "../include/HumanB.hpp"
 
 int main(int argc, char *argv[]) 
 {

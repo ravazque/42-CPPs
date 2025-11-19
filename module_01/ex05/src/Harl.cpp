@@ -6,11 +6,11 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 13:45:47 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 15:06:44 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:29:03 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#include "../include/Harl.hpp"
 
 void Harl::debug( void )
 {
