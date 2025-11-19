@@ -6,13 +6,13 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 18:33:31 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 18:36:17 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:03:33 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
-#include <iostream>
-#include "HumanA.hpp"
+#pragma once
+
+# include "HumanA.hpp"
 
 class HumanB
 {

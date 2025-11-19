@@ -6,11 +6,12 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 01:27:19 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/19 01:46:13 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:07:22 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef __FIXED__
+# define __FIXED__
 
 # include <iostream>
 # include <cmath>
@@ -42,3 +43,5 @@ class Fixed
 };
 
 std::ostream    &operator<<(std::ostream &o, Fixed const &fixed);
+
+#endif

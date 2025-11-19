@@ -7,10 +7,8 @@
 //                                                                            //
 // ************************************************************************** //
 
-
-#pragma once
 #ifndef __ACCOUNT_H__
-#define __ACCOUNT_H__
+# define __ACCOUNT_H__
 
 // ************************************************************************** //
 //                               Account Class                                //
@@ -21,7 +19,7 @@ class Account {
 
 public:
 
-	typedef Account		t;
+	typedef Account	t;
 
 	static int	getNbAccounts( void );
 	static int	getTotalAmount( void );

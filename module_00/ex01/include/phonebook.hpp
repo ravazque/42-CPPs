@@ -6,11 +6,12 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 18:14:44 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/10 18:43:25 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:04:38 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef __PHONEBOOK_H__
+# define __PHONEBOOK_H__
 
 # include <iostream>
 # include <cctype>
@@ -65,3 +66,5 @@ class	phoneBook
 
 		bool	get_input(string &input, const string &prompt);
 };
+
+#endif

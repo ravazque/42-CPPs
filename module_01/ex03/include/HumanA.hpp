@@ -6,13 +6,13 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 18:33:36 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 18:37:33 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:03:40 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
-#include <iostream>
-#include "Weapon.hpp"
+#pragma once
+
+# include "Weapon.hpp"
 
 class HumanA
 {

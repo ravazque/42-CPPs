@@ -6,15 +6,15 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 13:45:58 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 15:03:03 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:07:01 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef __HARL__
 # define __HARL__
 
-#include <string>
-#include <iostream>
+# include <string>
+# include <iostream>
 
 typedef std::string string;
 

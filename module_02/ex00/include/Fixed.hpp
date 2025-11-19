@@ -6,13 +6,14 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 21:21:24 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/19 01:29:18 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:07:12 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef __FIXED__
+# define __FIXED__
 
-# include <iostream>
+#  include <iostream>
 
 class Fixed
 {
@@ -32,3 +33,5 @@ class Fixed
 		int getRawBits(void)const;
 		void setRawBits(int const raw);
 };
+
+#endif

@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 02:15:31 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 20:08:17 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 12:54:44 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	Zombie *zombies = Zombie::zombieHorde(N, "Manolo");
+	Zombie *zombies = Zombie::zombieHorde(N, "Zombie");
 
 	if (zombies == NULL)
 		return (1);

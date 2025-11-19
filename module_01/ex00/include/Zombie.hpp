@@ -6,14 +6,14 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 02:14:16 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/18 21:03:14 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:06:04 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
+#ifndef __ZOMBIE_HPP__
+# define __ZOMBIE_HPP__
 
-#include <iostream>
+# include <iostream>
 
 class Zombie
 {
