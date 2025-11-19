@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 02:14:16 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/19 13:06:04 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:16:52 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ class Zombie
 
 	};
 	
-	void randomChump( std::string name );
-	Zombie* newZombie( std::string name );
+	void		randomChump( std::string name );
+	Zombie*		newZombie( std::string name );
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 13:45:58 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/19 13:07:01 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:17:40 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,14 @@ class Harl
 {
 	private:
 
-		void debug( void );
-		void info( void );
-		void warning( void );
-		void error( void );
+		void	debug( void );
+		void	info( void );
+		void	warning( void );
+		void	error( void );
 
 	public:
 
-		void complain( string level );
+		void	complain( string level );
 	
 };
 

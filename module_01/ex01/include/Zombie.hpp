@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 02:14:16 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/19 13:06:00 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/19 13:17:05 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ class Zombie
 		
 		~Zombie();
 
-		void setName(std::string zombieName);
-		void announce( void );
-		static Zombie* zombieHorde( int N, std::string name );
+		void			setName(std::string zombieName);
+		void			announce( void );
+		static Zombie*	zombieHorde( int N, std::string name );
 };
 
 #endif
