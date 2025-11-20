@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 21:21:24 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/19 23:10:42 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/20 20:06:25 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,16 @@ class ClapTrap
         void beRepaired(unsigned int amount);
 
         ClapTrap	&operator=(ClapTrap const &copy);
+        
+        string const	&get_name(void) const;
+		int const		&get_hit_points(void) const;
+		int const		&get_energy_points(void) const;
+		int const		&get_attack_damage(void) const;
+
+		void			set_name(string const &name);
+		void			set_hit_points(int const &value);
+		void			set_energy_points(int const &value);
+		void			set_attack_damage(int const &value);
 
 };
 
