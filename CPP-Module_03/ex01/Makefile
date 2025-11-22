@@ -1,5 +1,5 @@
 
-NAME = claptrap
+NAME = scavtrap
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 CXX = c++
@@ -9,7 +9,7 @@ SRC_DIR = src
 OBJ_DIR = objects
 INC_DIR = include
 
-SRCS = ClapTrap.cpp main.cpp
+SRCS = ClapTrap.cpp ScavTrap.cpp main.cpp
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
 CYAN = \001\033[36m\002
