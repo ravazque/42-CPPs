@@ -6,13 +6,13 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 20:27:35 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/22 22:04:12 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/23 00:40:51 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/ClapTrap.hpp"
 
-ClapTrap::ClapTrap(void): _name("Clone"), _hit_points(10), _energy_points(10), _attack_damage(0)
+ClapTrap::ClapTrap(void): _name("Clone_DefaultC"), _hit_points(10), _energy_points(10), _attack_damage(0)
 {
 	std::cout << "ClapTrap Default Constructor called" << std::endl;
 }
