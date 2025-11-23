@@ -58,15 +58,6 @@ C++ introduction project for 42 Madrid. This repository contains exercises from 
 
 ---
 
-## Documentation
-
-Comprehensive guides covering all concepts from modules 0 to 4:
-
-- **[C++ Guide (English)](./docs/CPP-Concepts.md)** - Complete reference guide
-- **[Guía C++ (Español)](./docs/CPP-Conceptos.md)** - Guía de referencia completa
-- 
----
-
 ## Standards
 
 - **C++ Version**: C++98
