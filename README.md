@@ -57,8 +57,6 @@ C++ introduction project for 42 Madrid. This repository contains exercises from 
 ---
 
 > [!NOTE]
-> ## Standards
-> 
 > - **C++ Version**: C++98
 > - **Compiler**: c++ with flags `-Wall -Wextra -Werror -std=c++98`
 > - **Naming**: UpperCamelCase for classes
