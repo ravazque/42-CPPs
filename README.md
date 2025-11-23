@@ -5,8 +5,6 @@ C++ introduction project for 42 Madrid. This repository contains exercises from 
 
 ---
 
-## Modules
-
 ### [CPP-Module_00](./CPP-Module_00) - Introduction to C++
 - **ex00**: Megaphone
 - **ex01**: PhoneBook
@@ -58,11 +56,10 @@ C++ introduction project for 42 Madrid. This repository contains exercises from 
 
 ---
 
-## Standards
-
-- **C++ Version**: C++98
-- **Compiler**: c++ with flags `-Wall -Wextra -Werror -std=c++98`
-- **Naming**: UpperCamelCase for classes
-- **Files**: ClassName.hpp, ClassName.cpp
-
----
+> [!NOTE]
+> ## Standards
+> 
+> - **C++ Version**: C++98
+> - **Compiler**: c++ with flags `-Wall -Wextra -Werror -std=c++98`
+> - **Naming**: UpperCamelCase for classes
+> - **Files**: ClassName.hpp, ClassName.cpp
