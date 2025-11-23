@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 20:27:35 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/23 00:42:48 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/23 02:02:02 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ int	main(int argc, char *argv[])
 		// 	f.attack("FragTrap-clone");
 		std::cout << "\033[32mDeconstructing:\033[0m" << std::endl;
 	}
-	std::cout << "\033[1;31m\n\n### TESTING DIAMONDTRAP ###\n[0m" << std::endl;
+	std::cout << "\033[1;31m\n\n### TESTING DIAMONDTRAP ###\n\033[0m" << std::endl;
 	{
 		std::cout << "\033[31mConstructing:\033[0m" << std::endl;
 		DiamondTrap a;
