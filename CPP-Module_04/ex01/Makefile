@@ -1,5 +1,5 @@
 
-NAME = 
+NAME = brain
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 CXX = c++
@@ -9,7 +9,7 @@ SRC_DIR = src
 OBJ_DIR = objects
 INC_DIR = include
 
-SRCS = 
+SRCS = Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp main.cpp
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
 CYAN = \033[36m
