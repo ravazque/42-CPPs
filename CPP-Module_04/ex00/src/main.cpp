@@ -5,12 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/19 01:26:58 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/23 03:27:53 by ravazque         ###   ########.fr       */
+/*   Created: 2025/11/23 03:11:06 by ravazque          #+#    #+#             */
+/*   Updated: 2025/11/23 03:28:26 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/Fixed.hpp"
+#include "../include/Animal.hpp"
+#include "../include/Dog.hpp"
+#include "../include/Cat.hpp"
 
 int main(int argc, char *argv[])
 {
@@ -22,22 +24,20 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	Fixed a;
-	Fixed const b(10);
-	Fixed const c(42.42f);
-	Fixed const d(b);
+	const Animal* meta = new Animal();
+	const Animal* j = new Dog();
+	const Animal* i = new Cat();
 
-	a = Fixed(1234.4321f);
+	std::cout << j->getType() << " " << std::endl;
+	std::cout << i->getType() << " " << std::endl;
 
-	std::cout << "a is " << a << std::endl;
-	std::cout << "b is " << b << std::endl;
-	std::cout << "c is " << c << std::endl;
-	std::cout << "d is " << d << std::endl;
+	i->makeSound();
+	j->makeSound();
+	meta->makeSound();
 
-	std::cout << "a is " << a.toInt() << " as integer" << std::endl;
-	std::cout << "b is " << b.toInt() << " as integer" << std::endl;
-	std::cout << "c is " << c.toInt() << " as integer" << std::endl;
-	std::cout << "d is " << d.toInt() << " as integer" << std::endl;
-	
+	delete meta;
+	delete j;
+	delete i;
+
 	return (0);
 }

@@ -12,8 +12,8 @@ INC_DIR = include
 SRCS = Fixed.cpp main.cpp
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
-CYAN = \001\033[36m\002
-RESET = \001\033[0m\002
+CYAN = \033[36m
+RESET = \033[0m
 
 all: $(NAME)
 
