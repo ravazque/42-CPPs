@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 03:22:04 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/23 03:47:02 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/23 04:29:02 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,29 +15,28 @@
 Dog::Dog()
 {
 	this->_type = "Dog";
-	std::cout << "Constructot por defecto - [ Dog ]" << std::endl;
+	std::cout << "Default constructor - [ Dog ]" << std::endl;
 }
 Dog::Dog(const Dog &copy) : Animal(copy)
 {
-    std::cout << "Constructor de copia - [ Dog ]" << std::endl;
+    std::cout << "Copy constructor - [ Dog ]" << std::endl;
     *this = copy;
 }
 Dog::~Dog()
 {
-	std::cout << "Destructor por defecto - [ Dog ]" << std::endl;
+	std::cout << "Destructor - [ Dog ]" << std::endl;
 }
 
 Dog &Dog::operator=(const Dog &src)
 {
-	std::cout << "Operador de asignación - [ Dog ]" << std::endl;
+	std::cout << "Assignment operator - [ Dog ]" << std::endl;
 	if (this == &src)
-		return *this;
-
+		return (*this);
 	this->_type = src._type;
-	return *this;
+	return (*this);
 }
 
 void Dog::makeSound(void)const
 {
-	std::cout << this->getType() << ": GUAU!" << std::endl;
+	std::cout << this->getType() << ": WOOF WOOF!" << std::endl;
 }

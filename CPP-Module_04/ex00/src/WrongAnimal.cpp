@@ -1,46 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/23 03:22:04 by ravazque          #+#    #+#             */
+/*   Created: 2025/11/23 04:21:01 by ravazque          #+#    #+#             */
 /*   Updated: 2025/11/23 04:29:02 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/Animal.hpp"
+#include "../include/WrongAnimal.hpp"
 
-Animal::Animal() : _type("")
+WrongAnimal::WrongAnimal() : _type("")
 {
-	std::cout << "Default constructor - [ Animal ]" << std::endl;
+	std::cout << "Default constructor - [ WrongAnimal ]" << std::endl;
 }
-Animal::Animal(const Animal &copy)
+WrongAnimal::WrongAnimal(const WrongAnimal &copy)
 {
-    std::cout << "Copy constructor - [ Animal ]" << std::endl;
+    std::cout << "Copy constructor - [ WrongAnimal ]" << std::endl;
     *this = copy;
 }
-Animal::~Animal()
+WrongAnimal::~WrongAnimal()
 {
-	std::cout << "Destructor - [ Animal ]" << std::endl;
+	std::cout << "Destructor - [ WrongAnimal ]" << std::endl;
 }
 
-Animal &Animal::operator=(const Animal &src)
+WrongAnimal &WrongAnimal::operator=(const WrongAnimal &src)
 {
-	std::cout << "Assignment operator - [ Animal ]" << std::endl;
+	std::cout << "Assignment operator - [ WrongAnimal ]" << std::endl;
 	if (this == &src)
 		return (*this);
 	this->_type = src._type;
 	return (*this);
 }
 
-void Animal::makeSound(void)const
+void WrongAnimal::makeSound(void)const
 {
-	std::cout << "This animal doesn't make any sound." << std::endl;
+	std::cout << "This WrongAnimal doesn't make any sound." << std::endl;
 }
 
-string	Animal::getType(void)const
+string	WrongAnimal::getType(void)const
 {
 	return (this->_type);
 }

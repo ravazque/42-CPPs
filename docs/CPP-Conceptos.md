@@ -717,7 +717,7 @@ MiClase &MiClase::operator=(const MiClase &src)
     {
         this->_valor = src._valor;
     }
-    return *this;
+    return (*this);
 }
 ```
 
@@ -804,7 +804,7 @@ class Fixed
 Fixed &Fixed::operator++()
 {
     this->_fpValue++;
-    return *this;
+    return (*this);
 }
 
 // Post-incremento (x++)
@@ -1303,7 +1303,7 @@ Dog &Dog::operator=(const Dog &src)
         delete this->_brain; // Eliminar Brain antiguo
         this->_brain = new Brain(*src._brain); // Crear NUEVO Brain
     }
-    return *this;
+    return (*this);
 }
 
 Dog::~Dog()

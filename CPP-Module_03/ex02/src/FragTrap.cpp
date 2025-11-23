@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 00:10:36 by ravazque          #+#    #+#             */
-/*   Updated: 2025/11/23 00:16:45 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/11/23 04:29:02 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ FragTrap &FragTrap::operator=(const FragTrap &src)
 	this->_hit_points = src._hit_points;
 	this->_energy_points = src._energy_points;
 	this->_attack_damage = src._attack_damage;
-	return *this;
+	return (*this);
 }
 
 void	FragTrap::highFiveGuys(void)

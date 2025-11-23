@@ -717,7 +717,7 @@ MyClass &MyClass::operator=(const MyClass &src)
     {
         this->_value = src._value;
     }
-    return *this;
+    return (*this);
 }
 ```
 
@@ -804,7 +804,7 @@ class Fixed
 Fixed &Fixed::operator++()
 {
     this->_fpValue++;
-    return *this;
+    return (*this);
 }
 
 // Post-increment (x++)
@@ -1303,7 +1303,7 @@ Dog &Dog::operator=(const Dog &src)
         delete this->_brain; // Delete old Brain
         this->_brain = new Brain(*src._brain); // Create NEW Brain
     }
-    return *this;
+    return (*this);
 }
 
 Dog::~Dog()

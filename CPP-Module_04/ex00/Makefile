@@ -9,7 +9,7 @@ SRC_DIR = src
 OBJ_DIR = objects
 INC_DIR = include
 
-SRCS = Animal.cpp Dog.cpp Cat.cpp main.cpp
+SRCS = Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp main.cpp
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
 CYAN = \033[36m
