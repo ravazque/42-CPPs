@@ -1,4 +1,3 @@
-
 # 42 C++ Modules (00-04)
 
 C++ introduction project for 42 Madrid. This repository contains exercises from Module 00 to Module 04, covering fundamental C++ concepts from basic syntax to polymorphism.
@@ -53,6 +52,52 @@ C++ introduction project for 42 Madrid. This repository contains exercises from 
 - **ex03**: Interface & recap
 
 **Topics**: Subtype polymorphism, abstract classes, interfaces, pure virtual functions, deep copy.
+
+---
+
+### [CPP-Module_05](./CPP-Module_05) - 
+- **ex00**: 
+- **ex01**: 
+- **ex02**: 
+- **ex03**: 
+
+**Topics**: 
+
+---
+
+### [CPP-Module_06](./CPP-Module_06) - 
+- **ex00**: 
+- **ex01**: 
+- **ex02**: 
+
+**Topics**: 
+
+---
+
+### [CPP-Module_07](./CPP-Module_07) - 
+- **ex00**: 
+- **ex01**: 
+- **ex02**: 
+
+**Topics**: 
+
+---
+
+### [CPP-Module_08](./CPP-Module_08) - 
+- **ex00**: 
+- **ex01**: 
+- **ex02**: 
+
+**Topics**: 
+
+---
+
+### [CPP-Module_09](./CPP-Module_09) - 
+- **ex00**: 
+- **ex01**: 
+- **ex02**: 
+
+**Topics**: 
 
 ---
 
