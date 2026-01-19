@@ -1,6 +1,6 @@
-# 42 C++ Modules (00-04)
+# 42 C++ Modules (00-09)
 
-C++ introduction project for 42 Madrid. This repository contains exercises from Module 00 to Module 04, covering fundamental C++ concepts from basic syntax to polymorphism.
+C++ introduction project for 42 Madrid. This repository contains exercises from Module 00 to Module 09, covering fundamental C++ concepts from basic syntax to advanced STL usage.
 
 ---
 
@@ -55,49 +55,49 @@ C++ introduction project for 42 Madrid. This repository contains exercises from 
 
 ---
 
-### [CPP-Module_05](./CPP-Module_05) - 
-- **ex00**: 
-- **ex01**: 
-- **ex02**: 
-- **ex03**: 
+### [CPP-Module_05](./CPP-Module_05) - Repetition and Exceptions
+- **ex00**: Mommy, when I grow up, I want to be a bureaucrat!
+- **ex01**: Form up, maggots!
+- **ex02**: No, you need form 28B, not 28C...
+- **ex03**: At least this beats coffee-making
 
-**Topics**: 
-
----
-
-### [CPP-Module_06](./CPP-Module_06) - 
-- **ex00**: 
-- **ex01**: 
-- **ex02**: 
-
-**Topics**: 
+**Topics**: Exceptions, try/catch blocks, exception classes, nested classes. 
 
 ---
 
-### [CPP-Module_07](./CPP-Module_07) - 
-- **ex00**: 
-- **ex01**: 
-- **ex02**: 
+### [CPP-Module_06](./CPP-Module_06) - C++ Casts
+- **ex00**: Conversion of scalar types
+- **ex01**: Serialization
+- **ex02**: Identify real type
 
-**Topics**: 
-
----
-
-### [CPP-Module_08](./CPP-Module_08) - 
-- **ex00**: 
-- **ex01**: 
-- **ex02**: 
-
-**Topics**: 
+**Topics**: C++ casts (static_cast, dynamic_cast, reinterpret_cast, const_cast). 
 
 ---
 
-### [CPP-Module_09](./CPP-Module_09) - 
-- **ex00**: 
-- **ex01**: 
-- **ex02**: 
+### [CPP-Module_07](./CPP-Module_07) - C++ Templates
+- **ex00**: Start with a few functions
+- **ex01**: Iter
+- **ex02**: Array
 
-**Topics**: 
+**Topics**: C++ templates, function templates, class templates. 
+
+---
+
+### [CPP-Module_08](./CPP-Module_08) - Templated Containers, Iterators, Algorithms
+- **ex00**: Easy find
+- **ex01**: Span
+- **ex02**: Mutated abomination
+
+**Topics**: Templated containers, iterators, algorithms, STL. 
+
+---
+
+### [CPP-Module_09](./CPP-Module_09) - STL
+- **ex00**: Bitcoin Exchange
+- **ex01**: Reverse Polish Notation
+- **ex02**: PmergeMe
+
+**Topics**: STL, containers, algorithms, Ford-Johnson algorithm. 
 
 ---
 
