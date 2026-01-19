@@ -6,15 +6,23 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 20:00:30 by ravazque          #+#    #+#             */
-/*   Updated: 2026/01/07 20:01:05 by ravazque         ###   ########.fr       */
+/*   Updated: 2026/01/19 17:49:58 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Bureaucrat.hpp"
 #include "../include/Form.hpp"
 
-int main(void)
+int main(int argc, char *argv[])
 {
+	(void)argv;
+	
+	if (argc != 1)
+	{
+		std::cerr << "Please do not add arguments to the executable." << std::endl;
+		return (1);
+	}
+
 	std::cout << "\n=== Testing Form Class ===" << std::endl;
 
 	try
