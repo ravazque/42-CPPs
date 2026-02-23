@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 17:40:06 by ravazque          #+#    #+#             */
-/*   Updated: 2026/01/19 18:12:04 by ravazque         ###   ########.fr       */
+/*   Updated: 2026/02/23 23:00:14 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ ScalarConverter &ScalarConverter::operator=(const ScalarConverter &src)
 	return (*this);
 }
 
-// Funciones auxiliares para detectar el tipo
 static bool isChar(const std::string &literal)
 {
 	return (literal.length() == 3 && literal[0] == '\'' && literal[2] == '\'');
@@ -121,7 +120,6 @@ static bool isDouble(const std::string &literal)
 	return hasDigit && hasDot;
 }
 
-// Conversiones desde char
 static void convertFromChar(char c)
 {
 	std::cout << "char: '" << c << "'" << std::endl;
@@ -130,7 +128,6 @@ static void convertFromChar(char c)
 	std::cout << "double: " << std::fixed << std::setprecision(1) << static_cast<double>(c) << std::endl;
 }
 
-// Conversiones desde int
 static void convertFromInt(int n)
 {
 	// char
@@ -151,7 +148,6 @@ static void convertFromInt(int n)
 	std::cout << "double: " << std::fixed << std::setprecision(1) << static_cast<double>(n) << std::endl;
 }
 
-// Conversiones desde float
 static void convertFromFloat(float f)
 {
 	// char
@@ -175,7 +171,6 @@ static void convertFromFloat(float f)
 	std::cout << "double: " << std::fixed << std::setprecision(1) << static_cast<double>(f) << std::endl;
 }
 
-// Conversiones desde double
 static void convertFromDouble(double d)
 {
 	// char
@@ -199,10 +194,8 @@ static void convertFromDouble(double d)
 	std::cout << "double: " << std::fixed << std::setprecision(1) << d << std::endl;
 }
 
-// Método público estático convert
 void ScalarConverter::convert(const std::string &literal)
 {
-	// Detectar y convertir según el tipo
 	if (isChar(literal))
 	{
 		convertFromChar(literal[1]);

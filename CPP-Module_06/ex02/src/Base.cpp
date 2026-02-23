@@ -1,24 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Base.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/19 17:43:57 by ravazque          #+#    #+#             */
-/*   Updated: 2026/02/23 23:00:22 by ravazque         ###   ########.fr       */
+/*   Created: 2026/02/23 21:54:25 by ravazque          #+#    #+#             */
+/*   Updated: 2026/02/23 23:02:51 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/ScalarConverter.hpp"
+# include "../include/Base.hpp"
 
-int main(int argc, char *argv[])
-{
-	if (argc != 2)
-	{
-		std::cerr << "Usage: ./convert <literal>" << std::endl;
-		return (1);
-	}
-	ScalarConverter::convert(argv[1]);
-	return (0);
-}
+Base::~Base(void) {}

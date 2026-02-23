@@ -1,24 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   iter.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/19 17:43:57 by ravazque          #+#    #+#             */
-/*   Updated: 2026/02/23 23:00:22 by ravazque         ###   ########.fr       */
+/*   Created: 2026/02/23 12:00:00 by ravazque          #+#    #+#             */
+/*   Updated: 2026/02/23 12:00:00 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/ScalarConverter.hpp"
+#ifndef ITER_HPP
+# define ITER_HPP
 
-int main(int argc, char *argv[])
+template <typename T, typename F>
+void iter(T *array, const int length, F func)
 {
-	if (argc != 2)
-	{
-		std::cerr << "Usage: ./convert <literal>" << std::endl;
-		return (1);
-	}
-	ScalarConverter::convert(argv[1]);
-	return (0);
+	for (int i = 0; i < length; i++)
+		func(array[i]);
 }
+
+#endif

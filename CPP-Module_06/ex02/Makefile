@@ -1,5 +1,5 @@
 
-NAME = 
+NAME = identify
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 CXX = c++
@@ -9,10 +9,10 @@ SRC_DIR = src
 OBJ_DIR = objects
 INC_DIR = include
 
-SRCS = 
+SRCS = Base.cpp main.cpp
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
-CYAN = \033[36m
+GREEN = \033[32m
 RESET = \033[0m
 
 all: $(NAME)

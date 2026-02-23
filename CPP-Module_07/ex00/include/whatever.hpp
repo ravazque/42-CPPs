@@ -1,24 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   whatever.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/19 17:43:57 by ravazque          #+#    #+#             */
-/*   Updated: 2026/02/23 23:00:22 by ravazque         ###   ########.fr       */
+/*   Created: 2026/02/23 12:00:00 by ravazque          #+#    #+#             */
+/*   Updated: 2026/02/23 12:00:00 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/ScalarConverter.hpp"
+#ifndef WHATEVER_HPP
+# define WHATEVER_HPP
 
-int main(int argc, char *argv[])
+template <typename T>
+void swap(T &a, T &b)
 {
-	if (argc != 2)
-	{
-		std::cerr << "Usage: ./convert <literal>" << std::endl;
-		return (1);
-	}
-	ScalarConverter::convert(argv[1]);
-	return (0);
+	T tmp = a;
+	a = b;
+	b = tmp;
 }
+
+template <typename T>
+T const &min(T const &a, T const &b)
+{
+	return (a < b ? a : b);
+}
+
+template <typename T>
+T const &max(T const &a, T const &b)
+{
+	return (a > b ? a : b);
+}
+
+#endif
