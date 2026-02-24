@@ -20,11 +20,11 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 	@printf "\n"
-	@printf "$(CYAN)            ___ ___        ___    _____    _     _      ___ ___ \n$(RESET)"
-	@printf "$(CYAN) ___ _ _   |   |   |   ___|  _|  |    _| _| |_ _| |_   |   |  _|\n$(RESET)"
-	@printf "$(CYAN)| -_|_'_|  | | | | |  | . |  _|  |   |_ |_   _|_   _|  | | |_  |\n$(RESET)"
-	@printf "$(CYAN)|___|_,_|  |___|___|  |___|_|    |_____|  |_|   |_|    |___|___|\n$(RESET)"
-	@printf "$(CYAN)                                                                \n$(RESET)"
+	@printf "$(CYAN)            ___ ___          ___    _____    _     _      ___ ___ \n$(RESET)"
+	@printf "$(CYAN) ___ _ _   |   |_  |     ___|  _|  |    _| _| |_ _| |_   |   | . |\n$(RESET)"
+	@printf "$(CYAN)| -_|_'_|  | | |_| |_   | . |  _|  |   |_ |_   _|_   _|  | | |_  |\n$(RESET)"
+	@printf "$(CYAN)|___|_,_|  |___|_____|  |___|_|    |_____|  |_|   |_|    |___|___|\n$(RESET)"
+	@printf "$(CYAN)                                                                  \n$(RESET)"
 	@printf "\n"
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp | $(OBJ_DIR)

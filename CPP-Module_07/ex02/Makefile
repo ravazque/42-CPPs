@@ -12,7 +12,7 @@ INC_DIR = include
 SRCS = main.cpp
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
-GREEN = \033[32m
+CYAN = \033[36m
 RESET = \033[0m
 
 all: $(NAME)
@@ -20,11 +20,11 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 	@printf "\n"
-	@printf "$(GREEN)            ___ ___        ___    _____    _     _      ___ ___ \n$(RESET)"
-	@printf "$(GREEN) ___ _ _   |   |_  |   ___|  _|  |    _| _| |_ _| |_   |   |   |\n$(RESET)"
-	@printf "$(GREEN)| -_|_'_|  | | |  _|  | . |  _|  |   |_ |_   _|_   _|  | | |   |\n$(RESET)"
-	@printf "$(GREEN)|___|_,_|  |___|___|  |___|_|    |_____|  |_|   |_|    |___|___|\n$(RESET)"
-	@printf "$(GREEN)                                                                \n$(RESET)"
+	@printf "$(CYAN)            ___ ___        ___    _____    _     _      ___ _____ \n$(RESET)"
+	@printf "$(CYAN) ___ _ _   |   |_  |   ___|  _|  |    _| _| |_ _| |_   |   ||__  |\n$(RESET)"
+	@printf "$(CYAN)| -_|_'_|  | | |  _|  | . |  _|  |   |_ |_   _|_   _|  | | |   | |\n$(RESET)"
+	@printf "$(CYAN)|___|_,_|  |___|___|  |___|_|    |_____|  |_|   |_|    |___|   |_|\n$(RESET)"
+	@printf "$(CYAN)                                                                  \n$(RESET)"
 	@printf "\n"
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp | $(OBJ_DIR)

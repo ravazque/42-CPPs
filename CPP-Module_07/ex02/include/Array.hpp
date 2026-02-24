@@ -15,6 +15,8 @@
 
 # include <exception>
 # include <cstddef>
+# include <cstdlib>
+# include <ctime>
 
 template <typename T>
 class Array
