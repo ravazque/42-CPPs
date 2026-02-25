@@ -29,6 +29,11 @@ static bool isChar(const std::string &literal)
 	return (literal.length() == 3 && literal[0] == '\'' && literal[2] == '\'');
 }
 
+static bool isSinglePrintableChar(const std::string &literal)
+{
+	return (literal.length() == 1 && std::isgraph((unsigned char)literal[0]));
+}
+
 static bool isSpecial(const std::string &literal)
 {
 	return (literal == "nan" || literal == "nanf" ||
@@ -258,6 +263,10 @@ void ScalarConverter::convert(const std::string &literal)
 		}
 		else
 			convertFromDouble(d);
+	}
+	else if (isSinglePrintableChar(literal))
+	{
+		convertFromChar(literal[0]);
 	}
 	else
 	{
